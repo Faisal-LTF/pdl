@@ -23,7 +23,7 @@ use App\Http\Controllers\PermissionController;
 */
 
 Route::get('/', function () {
-    return redirect('login');  
+    return Inertia::render('Landing/Landing');
 });
 
 Route::get('/dashboard', function () {
@@ -41,7 +41,7 @@ Route::middleware('auth', 'verified')->group(function () {
 
     Route::resource('/user', UserController::class)->except('create', 'show', 'edit');
     Route::post('/user/destroy-bulk', [UserController::class, 'destroyBulk'])->name('user.destroy-bulk');
-    
+
     Route::resource('/role', RoleController::class)->except('create', 'show', 'edit');
 
     Route::resource('/permission', PermissionController::class)->except('create', 'show', 'edit');

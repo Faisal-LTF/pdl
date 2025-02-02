@@ -366,7 +366,7 @@ const smoothScroll = (id) => {
                                 <h4
                                     class="font-medium text-2xl leading-normal mb-4 text-surface-900 light:text-surface-0">
                                     Fakultas Teknologi Informasi </h4>
-                                <a
+                                <a href="https://www.instagram.com/bem.fti.uniska/" target="_blank"
                                     class="leading-normal text-xl block cursor-pointer mb-2 text-surface-700 light:text-surface-100">BEM
                                     FTI</a>
                             </div>

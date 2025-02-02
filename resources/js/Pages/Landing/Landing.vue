@@ -1,5 +1,4 @@
 <script setup>
-import SecondaryButton from '@/Components/SecondaryButton.vue';
 
 const smoothScroll = (id) => {
     document.body.click();
